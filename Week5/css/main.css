@@ -1,4 +1,36 @@
 body{
 /* Body affects the element in question (property:Value;)*/
-background-color: red;
+background-color:lightblue ;
+font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
 }
+
+nav ul:hover{
+    font-size: large;
+    font-weight: bold;
+    transform: skewY(10deg);
+    padding: 100px;
+    margin: 20px; 
+}
+
+h1{
+    color: #6e6e6b;
+    text-decoration: underline;
+}
+
+h2{
+    background-color: #f0fc03;
+}
+
+h3 {
+border: 1px dashed #101852; 
+}
+
+
+header {
+    background-color: #7f03fc;
+}
+
+p{
+    color: #f1f2bf;
+}
+
