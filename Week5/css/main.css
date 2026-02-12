@@ -34,3 +34,25 @@ p{
     color: #f1f2bf;
 }
 
+#aboutus{
+    background-color: aquamarine;
+    
+}
+.imp-para{
+    text-transform: uppercase;
+}
+
+/* While tired, you realized that the class and id tags have to be called in their unique call formatting 
+id  #id-name
+.classname 
+Don't forgoet your squiggly brackets {} 
+element(in this case) p:nth-child(#){ CSS Change } */
+
+p:nth-child(2) {
+    background-color: aliceblue;
+}
+
+section ul li:nth-child(odd){
+    background-color: chocolate;
+}
+
