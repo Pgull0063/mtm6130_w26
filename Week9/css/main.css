@@ -45,20 +45,36 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-
+}
     /* Custom CSS */
-html{
-    font-size:  : 14px;
+html {
+    font-size: 14px;
 }
 
 h1{
     font-size: 3rem;
+	color: red;
+}
+
+.avatar{
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
 }
 
 @media screen and (min-width: 700px){
     html{
         font-size: 16px;
-        /* 16*3=48 */
+        /*h1 font size = 16*3=48 */
     }
+	h1{
+		color: gold;
+	}
 }
+
+@media screen and (min-width:1000px){
+	h1{
+		color: blue;
+	}
 }
+
