@@ -60,6 +60,7 @@ h1{
 	width: 100px;
 	height: 100px;
 	background-color: lightblue;
+	border: 2px solid darkblue;
 }
 
 @media screen and (min-width: 700px){
@@ -70,11 +71,23 @@ h1{
 	h1{
 		color: gold;
 	}
+	.avatar{
+			border-radius: 2rem;
+	}
+
+}
+
+@media screen and (min-width:700px) and (max-width:900px){
+	.avatar{border-radius: 0;
+	}
 }
 
 @media screen and (min-width:1000px){
 	h1{
 		color: blue;
+	}
+	.avatar{
+		border-radius: 50%;
 	}
 }
 
