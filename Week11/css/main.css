@@ -1,0 +1,99 @@
+.box{
+    background-color: lightblue;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.grid-container1{
+    display: grid;
+    /* grid column template 1fr 1fr *; 
+    grid-template-columns: 1fr 1fr 1fr;
+    three columns: 200px, 500px, and 1fr 
+    grid-template-columns: 200px 500px 1fr;
+    grid-template-rows: 200px 200px;*/
+    grid-template-columns: 1fr;
+    gap: 1rem 2rem;
+    /* Other Options for making a gap  
+    row-gap: 1rem;
+    column-gap: 2rem; */
+}
+
+/* Section Two for grid line practice */ 
+
+.grid-container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 70px);
+    gap: 1rem;
+
+    /*Alternative to prevent for repeating Function(repeatX, XXpx);
+    Add manual dimesions */
+}
+
+.grid-container2 .box-1{
+     grid-column: 1/3;
+
+    /* Copy Pasted Inital 
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    alternative 
+    grid-area: 1/1/3/4 */
+}
+
+.grid-container2 .box-3{
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+
+}
+
+.grid-container3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   /* grid-template-rows: repeat(5, 70px); */
+   grid-auto-rows: 70px;
+    gap: 1rem;
+}
+
+.grid-container3 .box-10{
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+
+.grid-container3 .box-20 , .grid-container3 .box-30{
+    grid-row: 3/5;
+}
+
+.grid-container3 .box-40{
+    grid-row: 3/6;
+}
+
+.grid-container3 .box-50{
+    grid-column: 1/3;
+}
+
+
+/* Media Screen Sizes*/
+
+@media screen and (min-width:600px){
+    .grid-container1{
+        grid-template-columns: 1fr 1fr;
+    }
+    }
+
+@media screen and (min-width:900px){
+    .grid-container1{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+    
+}
+
+@media screen and (min-width:1200px){
+    .grid-container1{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+}
+
