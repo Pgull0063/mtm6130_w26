@@ -74,6 +74,16 @@
     grid-column: 1/3;
 }
 
+/* Practicing for Span Function
+After assigning another class of previous grid function, new class in sequence 4.
+Moved into the CSS file (this file) and started a parent class from the grid.container4
+and established the grid-column, and moved into the SPAN(function). 
+Without establishing the grid column, you're gonna have a bad time.
+
+Grid Item Positioning with Areas 
+Assigning Grid Names and making pre-made templates that can be called by name. 
+
+*/
 
 /* Media Screen Sizes*/
 
